@@ -12,7 +12,7 @@ namespace Students.Services
         {
             Student student = new Student();
             student.Name = studentDto.Name;
-            student.NotasDisciplinas = studentDto.Grades;
+            student.GradesBySubject = studentDto.Grades;
             student.Attendance = studentDto.Attendance;
 
             StudentsList.Add(student);
@@ -67,12 +67,12 @@ namespace Students.Services
 
         }
 
-        public List<MediaTurmaDto> GetAverageBySubject()
+        public List<ClassAverageDto> GetAverageBySubject()
         {
             var result = StudentsList
-                .SelectMany(static student => student.NotasDisciplinas) 
+                .SelectMany(static student => student.GradesBySubject) 
                 .GroupBy(static grade => grade.SubjectName)                
-                .Select(static group => new MediaTurmaDto
+                .Select(static group => new ClassAverageDto
                 {
                     SubjectName = group.Key,
                     Average = group.Average(grade => grade.Grade)
@@ -95,7 +95,7 @@ namespace Students.Services
 
                 var studentsAboveAverage = StudentsList
                     .Where(student =>
-                        student.NotasDisciplinas.Any(n =>
+                        student.GradesBySubject.Any(n =>
                             n.SubjectName == subject &&
                             student.CalculateAverageGrade() > subjectAverageValue)).Select(e => e.Name)
                     .ToList();

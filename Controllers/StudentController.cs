@@ -18,7 +18,7 @@ namespace Students.Controllers
 
 
         [HttpPost("add")]
-        public IActionResult Process([FromBody] StudentRequestDto student)
+        public IActionResult Add([FromBody] StudentRequestDto student)
         {
             try
             {

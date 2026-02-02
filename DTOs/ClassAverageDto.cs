@@ -1,6 +1,6 @@
 ﻿namespace Students.DTOs
 {
-    public class MediaTurmaDto
+    public class ClassAverageDto
     {
         public string SubjectName { get; set; } = string.Empty;
 
