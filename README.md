@@ -74,9 +74,6 @@ curl -X POST "https://localhost:5001/api/student/add" \
 
 curl "https://localhost:5001/api/student/get"
 ```
-
-## Observações
-- O projeto armazena dados em memória (`StudentService`), portanto os dados são perdidos ao reiniciar a aplicação.
 - O namespace utilizado é `Students` (DTOs, Models, Services, Controllers)
 - A API inclui Swagger para documentação interativa em `/swagger/index.html`
 - Direcionado para uso de demonstração e testes locais.
