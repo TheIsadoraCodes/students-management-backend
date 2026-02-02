@@ -1,4 +1,4 @@
-﻿# Students Manager API (Desafio DTI Digital)
+﻿# Sistema de Gerenciamento de Alunos
 
 Projeto em ASP.NET Core (.NET 8) que gerencia informações de alunos, notas por disciplina e frequência. Fornece endpoints para adicionar alunos e retornar estatísticas da turma.
 
