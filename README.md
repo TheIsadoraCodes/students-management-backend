@@ -66,7 +66,7 @@ StudentsManager/
 - `Student` — modelo de aluno com propriedades completas
 - `ResultResponseDto` — resposta agregada usada no endpoint GET
 
-## Exemplo cURL
+## Exemplo URL
 ```bash
 curl -X POST "https://localhost:5001/api/student/add" \
   -H "Content-Type: application/json" \
