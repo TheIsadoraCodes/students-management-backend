@@ -49,7 +49,7 @@ StudentsManager/
 │   ├── StudentAverageResponseDto.cs  # DTO de média por aluno
 │   ├── StudentAboveAverageDto.cs     # DTO de aluno acima da média
 │   ├── StudentLowAttendanceDto.cs    # DTO de aluno com baixa frequência
-│   ├── MediaTurmaDto.cs              # DTO de média da turma
+│   ├── ClassAverageDto.cs            # DTO de média da turma
 │   └── ResultResponseDto.cs          # DTO de resposta agregada
 ├── Models/
 │   ├── Student.cs                    # Modelo de Aluno
