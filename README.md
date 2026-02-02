@@ -78,5 +78,4 @@ curl "https://localhost:5001/api/student/get"
 - A API inclui Swagger para documentação interativa em `/swagger/index.html`
 - Direcionado para uso de demonstração e testes locais.
 
-## Contribuições
-Abrir issues ou pull requests para melhorias.
+
